@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: soham-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: soham-app
+  template:
+    metadata:
+      labels:
+        app: soham-app
+    spec:
+      containers:
+      - name: nginx
+        image: "123456789012.dkr.ecr.ap-south-1.amazonaws.com/soham-repo:latest"
+        ports:
+        - containerPort: 80

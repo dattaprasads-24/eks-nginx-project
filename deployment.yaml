@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: "123456789012.dkr.ecr.ap-south-1.amazonaws.com/soham-repo:latest"
+        image: "735067023527.dkr.ecr.ap-south-1.amazonaws.com/soham-repo:latest"
         ports:
         - containerPort: 80
